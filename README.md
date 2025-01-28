@@ -113,7 +113,7 @@ Contributions are welcome! Please feel free to submit a Pull Request.
 
 ```bash
 # Clone and install
-git clone https://github.com/sinanptm/avm-ayurvedic
+git clone git@github.com:sinanptm/hospital-management-system.git
 cd avm-ayurvedic
 pnpm install
 
@@ -129,7 +129,7 @@ pnpm dev
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/sinanptm/avm-ayurvedic
+   git clone git@github.com:sinanptm/hospital-management-system.git
    cd avm-ayurvedic
    ```
 
