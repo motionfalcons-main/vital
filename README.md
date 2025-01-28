@@ -9,12 +9,7 @@
 [![Backend](https://img.shields.io/badge/Backend-AWS-orange?style=for-the-badge&logo=amazon-aws)](https://api.avm-ayurvedic.online)
 [![Demo](https://img.shields.io/badge/Demo-Watch_Video-red?style=for-the-badge&logo=youtube)](https://youtu.be/fpOPtDixtD4)
 
-<br>
-
 </div>
-
----
-
 ## 🌟 Show Your Support
 If you find this project useful, please consider giving it a star on GitHub! Your support helps us grow and improve.
 
