@@ -22,7 +22,6 @@ If you find this project useful, please consider giving it a star on GitHub! You
 :---: | :---: | :---: | :---:
 📊 Admin Dashboard | 🔔 Real-time Notifications | 🔐 Robust Authentication | 🖼️ Secure File Uploads
 
----
 ## 💻 Tech Stack
 
 <details>
@@ -89,7 +88,6 @@ If you find this project useful, please consider giving it a star on GitHub! You
 
 </details>
 
----
 ## 🏗️ Architecture Highlights
 
 - 🧱 **Clean Architecture**: Modular, scalable, and maintainable
@@ -98,7 +96,6 @@ If you find this project useful, please consider giving it a star on GitHub! You
 - 📊 **Comprehensive Logging**: Winston for robust error tracking
 - 🧩 **Reusable Components**: Enhancing code reusability and consistency
 
----
 
 <div align="center">
 
