@@ -1,0 +1,88 @@
+services:
+  # Backend API (Node/Express + MongoDB + Stripe + Socket.io)
+  - type: web
+    name: vitalcare-connect-api
+    runtime: node
+    rootDir: server
+    plan: starter
+    buildCommand: |
+      npm install
+      npm run build
+    startCommand: node dist/index.js
+    envVars:
+      - key: NODE_ENV
+        value: production
+      # Render automatically injects PORT; server/src/index.ts already reads process.env.PORT
+      - key: PORT
+        value: 8080
+      # REQUIRED: set these in the Render dashboard or via blueprint values
+      - key: MONGODB_URL
+        value: YOUR_MONGODB_CONNECTION_STRING
+      - key: CLIENT_URL
+        value: https://vitalcare-connect-client.onrender.com
+      - key: ACCESS_TOKEN_SECRET
+        value: REPLACE_WITH_STRONG_SECRET
+      - key: REFRESH_TOKEN_SECRET
+        value: REPLACE_WITH_STRONG_SECRET
+      - key: STRIPE_SECRET_KEY
+        value: REPLACE_WITH_STRIPE_SECRET_KEY
+      - key: STRIPE_PUBLISHABLE_KEY
+        value: REPLACE_WITH_STRIPE_PUBLISHABLE_KEY
+      - key: STRIPE_WEBHOOK_SECRET
+        value: REPLACE_WITH_STRIPE_WEBHOOK_SECRET
+      - key: GEMINI_API_KEY
+        value: REPLACE_WITH_GEMINI_API_KEY
+      - key: AWS_REGION
+        value: YOUR_AWS_REGION
+      - key: AWS_ACCESS_KEY_ID
+        value: YOUR_AWS_ACCESS_KEY_ID
+      - key: AWS_SECRET_ACCESS_KEY
+        value: YOUR_AWS_SECRET_ACCESS_KEY
+      - key: S3_BUCKET_NAME
+        value: YOUR_S3_BUCKET_NAME
+      - key: SENDER_EMAIL
+        value: YOUR_SENDER_EMAIL
+      - key: NODEMAILER_PASSKEY
+        value: YOUR_NODEMAILER_APP_PASSWORD
+
+  # Frontend (Next.js app)
+  - type: web
+    name: vitalcare-connect-client
+    runtime: node
+    rootDir: client
+    plan: starter
+    buildCommand: |
+      pnpm install
+      pnpm build
+    startCommand: pnpm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NEXT_PUBLIC_ENV
+        value: production
+      - key: NEXT_PUBLIC_API_URL
+        value: https://vitalcare-connect-api.onrender.com/api
+      - key: NEXT_PUBLIC_BASE_API_URL
+        value: https://vitalcare-connect-api.onrender.com
+      - key: NEXT_PUBLIC_FIREBASE_API_KEY
+        value: YOUR_FIREBASE_API_KEY
+      - key: NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN
+        value: YOUR_FIREBASE_AUTH_DOMAIN
+      - key: NEXT_PUBLIC_FIREBASE_PROJECT_ID
+        value: YOUR_FIREBASE_PROJECT_ID
+      - key: NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET
+        value: YOUR_FIREBASE_STORAGE_BUCKET
+      - key: NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID
+        value: YOUR_FIREBASE_MESSAGING_SENDER_ID
+      - key: NEXT_PUBLIC_FIREBASE_APP_ID
+        value: YOUR_FIREBASE_APP_ID
+      - key: NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID
+        value: YOUR_FIREBASE_MEASUREMENT_ID
+      - key: NEXT_PUBLIC_STRIPE_KEY
+        value: REPLACE_WITH_STRIPE_PUBLISHABLE_KEY
+      - key: NEXT_PUBLIC_METERED_TURN_USERNAME
+        value: YOUR_TURN_USERNAME
+      - key: NEXT_PUBLIC_METERED_TURN_CREDENTIAL
+        value: YOUR_TURN_CREDENTIAL
+
+

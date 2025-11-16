@@ -1,12 +1,12 @@
 {
-   "name": "hospital-management-system",
+   "name": "vitalcare-connect",
    "version": "1.0.0",
    "private": true,
-   "description": "A modern full-stack (Mern) Ayurvedic healthcare platform featuring real-time video consultations, AI-powered health insights, secure payment processing, appointment management, and electronic prescriptions. Built with Next.js, Node.js, and WebRTC for a seamless healthcare experience.",
+   "description": "A modern full-stack telemedicine platform featuring real-time video consultations, AI-powered health insights, secure payment processing, appointment management, and electronic prescriptions. Built with Next.js, Node.js, and WebRTC for a seamless healthcare experience.",
    "keywords": [
      "ayurveda",
      "healthcare",
-     "hospital-management",
+     "telehealth-platform",
      "telemedicine",
      "video-consultation",
      "next-js",
@@ -34,8 +34,8 @@
      "stripe:webhook": "stripe listen --forward-to localhost:8000/api/webhook"
    },
    "author": {
-     "name": "Muhammed sinan - sinanptm",
-     "url": "https://github.com/sinanptm"
+     "name": "Your Name",
+     "url": "https://your-website-or-github.example.com"
    },
    "workspaces": [
      "client",
@@ -48,9 +48,9 @@
      "node": ">=22.0.0",
      "npm": ">=10.0.0"
    },
-   "homepage": "https://github.com/sinanptm/hospital-management-system?tab=readme-ov-file#-avm-ayurvedic",
+   "homepage": "https://github.com/motionfalcons-main/vital",
    "repository": {
      "type": "git",
-     "url": "https://github.com/sinanptm/hospital-management-system"
+     "url": "https://github.com/motionfalcons-main/vital.git"
    }
  }

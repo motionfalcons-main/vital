@@ -14,18 +14,13 @@ const nextConfig = {
             port: "",
             pathname: "/**",
          },
-         {
-            protocol: "https",
-            hostname: "avm-ayurvedic-2.s3.ap-south-1.amazonaws.com",
-            port: "",
-            pathname: "/**",
-         },
-         {
-            protocol: "https",
-            hostname: "avm-ayurvedic.s3.eu-north-1.amazonaws.com",
-            port: "",
-            pathname: "/**",
-         },
+         // Replace this with your own image CDN or object storage domain if needed
+         // {
+         //    protocol: "https",
+         //    hostname: "cdn.your-app-domain.com",
+         //    port: "",
+         //    pathname: "/**",
+         // },
          {
             protocol: "https",
             hostname: "plus.unsplash.com",

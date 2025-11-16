@@ -112,8 +112,14 @@ const AdminLayoutWithSideBar = ({
                      href="/doctor/slots"
                      className="group flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-primary text-lg font-semibold text-primary-foreground md:h-8 md:w-8 md:text-base"
                   >
-                     <Image width={23} height={23} src={"/assets/icons/logo-icon.svg"} alt="AVM" className="h-6 w-6" />
-                     <span className="sr-only">AVM</span>
+                     <Image
+                        width={23}
+                        height={23}
+                        src={"/assets/icons/logo-icon.svg"}
+                        alt="VitalCare Connect logo"
+                        className="h-6 w-6"
+                     />
+                     <span className="sr-only">VitalCare Connect</span>
                   </Link>
                   {sideBarLinks.map(renderSidebarLink)}
                </nav>
@@ -193,10 +199,10 @@ const AdminLayoutWithSideBar = ({
                               width={23}
                               height={23}
                               src={"/assets/icons/logo-icon.svg"}
-                              alt="AVM"
+                              alt="VitalCare Connect logo"
                               className="h-6 w-6"
                            />
-                           <span className="sr-only">AVM Ayurvedic</span>
+                           <span className="sr-only">VitalCare Connect</span>
                         </Link>
                         {sideBarLinks.map((item) => (
                            <Link

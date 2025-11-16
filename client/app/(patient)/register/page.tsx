@@ -28,7 +28,9 @@ const Register = () => {
 
                   <RegistrationForm refetch={refetch} />
 
-                  <p className="copyright py-12">© {new Date().getFullYear()} AVM Ayurvedic.</p>
+                  <p className="copyright py-12">
+                     © {new Date().getFullYear()} VitalCare Connect. Replace with your own legal entity name.
+                  </p>
                </div>
             </section>
 

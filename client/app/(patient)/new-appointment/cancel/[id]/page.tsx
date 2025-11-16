@@ -31,7 +31,7 @@ export default function PaymentFailurePage() {
                src="/assets/icons/logo-full.svg"
                width={200}
                height={50}
-               alt="AVM Ayurveda Logo"
+               alt="VitalCare Connect logo"
                className="h-10 w-auto"
             />
          </Link>
@@ -73,7 +73,9 @@ export default function PaymentFailurePage() {
             </div>
          </div>
 
-         <p className="mt-8 text-sm text-muted-foreground">© 2024 AVM Ayurveda</p>
+         <p className="mt-8 text-sm text-muted-foreground">
+            © 2024 VitalCare Connect. Replace with your own legal entity name.
+         </p>
       </div>
    );
 }

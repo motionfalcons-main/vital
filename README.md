@@ -1,26 +1,31 @@
 <div align="center">
 
-# 🌿 AVM Ayurvedic
+## VitalCare Connect
 
-<p><em>Bridging ancient Ayurvedic wisdom with modern technology</em></p>
-
-[![Website](https://img.shields.io/badge/🌐_Website-Visit_Our_Site-brightgreen?style=for-the-badge&logoColor=white)](https://avm-ayurvedic.online)
-[![Frontend](https://img.shields.io/badge/Frontend-Vercel-black?style=for-the-badge&logo=vercel)](https://avm-ayurvedic.online)
-[![Backend](https://img.shields.io/badge/Backend-AWS-orange?style=for-the-badge&logo=amazon-aws)](https://api.avm-ayurvedic.online)
-[![Demo](https://img.shields.io/badge/Demo-Watch_Video-red?style=for-the-badge&logo=youtube)](https://youtu.be/fpOPtDixtD4)
+<p><em>A modern telehealth platform for virtual consultations, appointments, and digital care.</em></p>
 
 </div>
-## 🌟 Show Your Support
-If you find this project useful, please consider giving it a star on GitHub! Your support helps us grow and improve.
 
 ---
 
+## Overview
+
+VitalCare Connect is a full-stack telemedicine application built with **Next.js**, **Node.js**, and **MongoDB**.  
+It provides virtual consultations, secure payments with Stripe, appointment management, digital prescriptions, and separate dashboards for patients, doctors, and admins.
+
+> Note: This project is a rebranded fork of an open-source hospital management system. All original names, domains, and credits have been removed.  
+> Replace placeholders like `Your Name`, `your-username`, and `your-app-domain.com` with your actual details before production use.
+
+---
 
 ## 🚀 Key Features
 
-📹 Video Consultations | 🤖 AI-Powered Wellness | 📅 Smart Booking | 💳 Secure Payments
-:---: | :---: | :---: | :---:
-📊 Admin Dashboard | 🔔 Real-time Notifications | 🔐 Robust Authentication | 🖼️ Secure File Uploads
+- **Virtual consultations**: Real-time video calls using WebRTC and Socket.io
+- **Smart booking**: Appointment scheduling and management for patients and doctors
+- **Secure payments**: Stripe integration for handling paid consultations
+- **Role-based dashboards**: Separate experiences for patient, doctor, and admin
+- **Notifications & chat**: Real-time chat and in-app notifications
+- **Digital prescriptions**: PDF prescription generation and download
 
 ## 💻 Tech Stack
 
@@ -97,24 +102,17 @@ If you find this project useful, please consider giving it a star on GitHub! You
 - 🧩 **Reusable Components**: Enhancing code reusability and consistency
 
 
-<div align="center">
-
-**[Explore Services](https://avm-ayurvedic.online) | [Book Consultation](https://avm-ayurvedic.online/new-appointment) | [More About Our Services](https://avm-ayurvedic.online/services)**
-
-</div>
+Contributions are welcome! Please feel free to submit a Pull Request to your own repository.
 
 
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-
-# AVM Ayurvedic Project Setup
+## Project Setup
 
 ## ⚡ Quick Start
 
 ```bash
-# Clone and install
-git clone git@github.com:sinanptm/hospital-management-system.git avm
-cd avm
+# Clone and install (your GitHub repo)
+git clone git@github.com:motionfalcons-main/vital.git vital
+cd vital
 pnpm install
 
 # Set up environment files and start
@@ -129,8 +127,8 @@ pnpm dev
 
 1. Clone the repository:
    ```bash
-   git clone git@github.com:sinanptm/hospital-management-system.git avm
-   cd avm
+   git clone git@github.com:motionfalcons-main/vital.git vital
+   cd vital
    ```
 
 2. Install dependencies:
@@ -146,7 +144,7 @@ pnpm dev
 1. Server Environment (.env in /server):
 ```env
 # Database
-MONGODB_URL=mongodb://localhost:27017/AVM
+MONGODB_URL=mongodb://localhost:27017/vitalcare-connect
 
 # Server Configuration
 PORT=8000
@@ -165,7 +163,7 @@ REFRESH_TOKEN_SECRET=test-refresh-token-secret
 AWS_REGION=eu-north-1
 AWS_ACCESS_KEY_ID=test-aws-access-key-id
 AWS_SECRET_ACCESS_KEY=test-aws-secret-access-key
-S3_BUCKET_NAME=test-avm-ayurvedic-bucket
+S3_BUCKET_NAME=test-your-s3-bucket-name
 
 # Payment Processing
 STRIPE_PUBLISHABLE_KEY=pk_test_XXXXXXXXXXXXXXXXXXXXXXXX
@@ -254,7 +252,7 @@ NEXT_PUBLIC_METERED_TURN_CREDENTIAL=test-metered-turn-credential
   2. Navigate to S3 and create a new bucket
   3. Configure bucket settings (e.g., region, access control)
   4. **Key Step**: Generate AWS access keys from the IAM dashboard
-  5. **CORS**: [Check this issue](https://github.com/sinanptm/hospital-management-system/issues/6)
+5. **CORS**: Configure CORS rules appropriate for your own frontend and backend domains.
   6. **Important**: Update your server's `.env` file with:
      ```env
      AWS_REGION=your_selected_region
@@ -273,7 +271,7 @@ NEXT_PUBLIC_METERED_TURN_CREDENTIAL=test-metered-turn-credential
       "Effect": "Allow",
       "Principal": "*",
       "Action": "s3:GetObject",
-      "Resource": "arn:aws:s3:::avm-ayurvedic-2/*"
+     "Resource": "arn:aws:s3:::your-s3-bucket-name/*"
     }
   ]
 }
@@ -386,16 +384,5 @@ stripe listen --forward-to localhost:8000/webhook
 
 ---
 
-<div  align="center">
-   
-[![GitHub Stars](https://img.shields.io/github/stars/sinanptm/hospital-management-system?style=for-the-badge&logo=github&color=gold)](https://github.com/sinanptm/hospital-management-system/stargazers)
-[![GitHub Forks](https://img.shields.io/github/forks/sinanptm/hospital-management-system?style=for-the-badge&logo=github&color=blue)](https://github.com/sinanptm/hospital-management-system/network/members)
-[![Open Issues](https://img.shields.io/github/issues-raw/sinanptm/hospital-management-system?style=for-the-badge&logo=github&color=red&label=Open%20Issues)](https://github.com/sinanptm/hospital-management-system/issues)
-[![Closed Issues](https://img.shields.io/github/issues-closed-raw/sinanptm/hospital-management-system?style=for-the-badge&logo=github&color=green&label=Closed%20Issues)](https://github.com/sinanptm/hospital-management-system/issues?q=is%3Aissue+is%3Aclosed)
-</div>
+For additional help or issues, please open a GitHub issue in **your own repository** or contact your team through your preferred support channel.
 
-For additional help or issues, please open a GitHub issue or contact me through email or any links from my profile.
-
-<p align="center">
-  Made with ❤️ by sinanptm
-</p>

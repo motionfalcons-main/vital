@@ -15,7 +15,7 @@ const HeroSection = () => {
                   <div className="relative w-full aspect-[16/9]">
                      <Image
                         src={randomImage}
-                        alt="AVM Ayurveda"
+                        alt="VitalCare Connect hero"
                         fill
                         sizes="(max-width: 768px) 100vw, 50vw"
                         className="object-cover"
@@ -24,11 +24,10 @@ const HeroSection = () => {
                   </div>
                </div>
                <div className="md:w-1/2 p-6 flex flex-col justify-center">
-                  <h2 className="text-2xl font-semibold mb-2">Embracing Holistic Wellness</h2>
+                  <h2 className="text-2xl font-semibold mb-2">Modern, Connected Healthcare</h2>
                   <p className="text-base text-muted-foreground">
-                     At Avm Ayurveda, we&apos;re dedicated to reviving the ancient wisdom of Ayurveda and integrating it
-                     with modern healthcare practices. Our goal is to guide you on a journey of holistic healing and
-                     self-discovery.
+                     At VitalCare Connect, we&apos;re dedicated to bringing quality healthcare to you through secure
+                     video consultations, smart booking, and digital care tools—anytime, anywhere.
                   </p>
                </div>
             </div>

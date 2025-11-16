@@ -9,7 +9,7 @@ export const metadata: Metadata = {
       "virtual assistant",
       "chat",
       "messages",
-      "AVM Ayurvedic",
+      "VitalCare Connect",
       "healthcare",
    ],
    description: "Integrating an OpenAI chatbot into the application to enhance user experience",

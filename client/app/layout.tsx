@@ -20,34 +20,35 @@ const inter = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-   metadataBase: new URL("https://avm-ayurvedic.online"),
+   metadataBase: new URL("https://your-app-domain.com"),
    title: {
-      template: "%s | AVM Ayurvedic",
-      default: "AVM Ayurvedic - Holistic Ayurveda Health Care & Wellness",
+      template: "%s | VitalCare Connect",
+      default: "VitalCare Connect - Modern Telehealth & Virtual Care",
    },
-   description:   "AVM Ayurvedic offers authentic Ayurvedic treatments and wellness services. Easily book online consultations, access expert doctors through video calls, and embrace natural healing for a healthier, balanced life.",
+   description:
+      "VitalCare Connect offers modern telehealth services including online consultations, virtual appointments, secure payments, and digital prescriptions for a seamless healthcare experience.",
    openGraph: {
-      title: "AVM Ayurvedic - Holistic Ayurveda Health & Wellness",
+      title: "VitalCare Connect - Modern Telehealth & Virtual Care",
       description:
-         "Discover personalized Ayurvedic care with AVM Ayurvedic. Book consultations and experience the benefits of natural healing.",
+         "Discover personalized, accessible healthcare with VitalCare Connect. Book virtual consultations and manage your care online.",
       type: "website",
       url: "/",
-      siteName: "AVM Ayurvedic",
+      siteName: "VitalCare Connect",
       locale: "en_US",
       images: [
          {
             url: "/og-image.webp",
             width: 1200,
             height: 630,
-            alt: "AVM Ayurvedic - Holistic Ayurveda Health Care",
+            alt: "VitalCare Connect - Modern Telehealth & Virtual Care",
          },
       ],
    },
    twitter: {
       card: "summary_large_image",
-      title: "AVM Ayurvedic - Holistic Health & Wellness",
+      title: "VitalCare Connect - Modern Telehealth & Virtual Care",
       description:
-         "Book Ayurvedic treatments & consultations online. Embrace natural healing and wellness through authentic Ayurveda.",
+         "Book secure virtual consultations and manage your healthcare online with VitalCare Connect.",
       images: ["/og-image.webp"],
    },
    robots: {

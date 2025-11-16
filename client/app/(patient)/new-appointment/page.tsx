@@ -6,8 +6,8 @@ import { Banners } from "@/constants";
 export const metadata: Metadata = {
    title: "Book a New Appointment",
    description:
-      "Schedule your next appointment with AVM Ayurvedic and get personalized treatment from our expert doctors. Book now for a healthier future.",
-   keywords: ["AVM Ayurvedic", "Book Appointment", "Ayurvedic Treatment", "Health and Wellness", "Doctor Appointment"],
+      "Schedule your next appointment with VitalCare Connect and get personalized care from our expert doctors. Book now for a healthier future.",
+   keywords: ["VitalCare Connect", "Book Appointment", "Telehealth", "Health and Wellness", "Doctor Appointment"],
 };
 
 const Appointment = () => {
@@ -23,7 +23,9 @@ const Appointment = () => {
                   className="mb-12 h-10 w-fit"
                />
                <AppointmentForm />
-               <p className="copyright py-12">© {new Date().getFullYear()} AVM Ayurvedic.</p>
+               <p className="copyright py-12">
+                  © {new Date().getFullYear()} VitalCare Connect. Replace with your own legal entity name.
+               </p>
             </div>
          </section>
 

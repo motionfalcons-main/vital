@@ -1,5 +1,5 @@
 {
-   "name": "server",
+   "name": "vitalcare-connect-server",
    "version": "1.0.0",
    "description": "Backend Server",
    "main": "dist/index.js",
@@ -15,15 +15,10 @@
    },
    "keywords": [],
    "author": {
-      "name": "sinanptm",
-      "url": "http://github.com/sinanptm"
+      "name": "Your Name",
+      "url": "https://your-website-or-github.example.com"
    },
-   "maintainers": [
-      {
-         "name": "sinanptm",
-         "url": "https://sinanptm.vercel.app"
-      }
-   ],
+   "maintainers": [],
    "license": "ISC",
    "dependencies": {
       "@aws-sdk/client-s3": "^3.654.0",

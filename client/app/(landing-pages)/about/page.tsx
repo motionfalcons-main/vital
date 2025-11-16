@@ -10,15 +10,15 @@ import { memo } from "react";
 export const metadata: Metadata = {
    title: "About Us",
    description:
-      "Learn about our commitment to holistic health through Ayurveda. Discover our story, meet our team, and understand our mission to enhance your well-being through ancient healing practices.",
-   keywords: ["Ayurveda", "Holistic Health", "About Us", "Our Team", "Our Mission", "Ayurvedic Center"],
+      "Learn about our commitment to modern, patient-centered virtual healthcare. Discover our story, meet our team, and understand our mission to enhance your well-being through accessible digital care.",
+   keywords: ["telehealth", "virtual care", "About Us", "Our Team", "Our Mission", "healthcare platform"],
 };
 
 const AboutPage = () => {
    return (
       <div className="min-h-screen bg-background py-8">
          <div className="container mx-auto px-4">
-            <h1 className="mb-8 text-4xl font-bold text-center">About AVM Ayurveda</h1>
+            <h1 className="mb-8 text-4xl font-bold text-center">About VitalCare Connect</h1>
             <HeroSection />
             <OurStory />
             <MissionAndValues />

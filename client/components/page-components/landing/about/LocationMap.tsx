@@ -16,12 +16,13 @@ const LocationMap = () => {
                <div className="space-y-4">
                   <div className="aspect-w-16 aspect-h-9">
                      <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3911.875185958898!2d75.79679470162522!3d11.343826171470987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ba65e0faa44289d%3A0xf35a6458bc072465!2sAVM%20Hospital!5e0!3m2!1sen!2sin!4v1728189070741!5m2!1sen!2sin"
+                        src="https://www.google.com/maps"
                         width="100%"
                         height="100%"
                         style={{ border: 0, borderRadius: "0.5rem" }}
                         allowFullScreen
                         loading="lazy"
+                        title="Clinic location"
                      ></iframe>
                   </div>
                   <div className="bg-primary/5 p-4 rounded-lg">
@@ -45,7 +46,7 @@ const LocationMap = () => {
                               alt="Location"
                               className="h-4 w-4 text-primary"
                            />
-                           <span>Chelannur, Kozhikode, Kerala 673616</span>
+                           <span>Your clinic address goes here</span>
                         </li>
                         <li className="flex items-center gap-2 text-base">
                            <Image
@@ -55,7 +56,7 @@ const LocationMap = () => {
                               alt="Location"
                               className="h-4 w-4 text-primary"
                            />
-                           <span>04952262655</span>
+                           <span>+00 0000 000000</span>
                         </li>
                         <li className="flex items-center gap-2 text-base">
                            <Image
@@ -65,7 +66,7 @@ const LocationMap = () => {
                               alt="Location"
                               className="h-4 w-4 text-primary"
                            />
-                           <span>avmayrveda@gmail.com</span>
+                           <span>contact@your-app-domain.com</span>
                         </li>
                      </ul>
                   </div>

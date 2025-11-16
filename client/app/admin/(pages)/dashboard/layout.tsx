@@ -3,20 +3,20 @@ import { Metadata } from "next";
 import { AdminDashBoardProps } from "@/types";
 
 export const metadata: Metadata = {
-   title: "Hospital Statistics Overview | AVM Ayurvedic",
+   title: "Platform Statistics Overview | VitalCare Connect",
    description:
-      "View detailed hospital statistics, including patient demographics, appointment statuses, user activity, and slot usage. The Admin Dashboard offers a comprehensive overview to manage hospital operations efficiently.",
+      "View detailed platform statistics, including patient demographics, appointment statuses, user activity, and slot usage. The Admin Dashboard offers a comprehensive overview to manage telehealth operations efficiently.",
    keywords: [
       "admin dashboard",
-      "hospital statistics",
-      "AVM Ayurvedic admin",
+      "platform statistics",
+      "VitalCare Connect admin",
       "patient demographics",
       "appointment tracking",
       "user activity",
       "slot usage",
-      "hospital management",
+      "telehealth management",
       "statistics overview",
-      "hospital operations",
+      "platform operations",
    ],
 };
 

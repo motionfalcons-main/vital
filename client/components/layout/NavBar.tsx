@@ -112,8 +112,14 @@ export const NavBar = () => {
       <header className="sticky top-0 z-50 flex h-16 items-center justify-between gap-4 border-b bg-dark-300 bg-opacity-55 px-4 md:px-6">
          <nav className="hidden flex-col gap-6 text-lg font-medium md:flex md:flex-row md:items-center md:gap-5 md:text-sm lg:gap-6">
             <Link href="/" className="flex items-center gap-2 text-lg font-semibold md:text-base" prefetch={false}>
-               <Image width={23} height={23} src="/assets/icons/logo-icon.svg" alt="AVM" className="h-6 w-6" />
-               <span className="sr-only">Acme Inc</span>
+               <Image
+                  width={23}
+                  height={23}
+                  src="/assets/icons/logo-icon.svg"
+                  alt="VitalCare Connect logo"
+                  className="h-6 w-6"
+               />
+               <span className="sr-only">VitalCare Connect</span>
             </Link>
             {NavLinks.map((link) => (
                <ButtonV2

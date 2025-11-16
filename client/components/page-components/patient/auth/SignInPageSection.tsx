@@ -43,7 +43,7 @@ const SignFromSection = () => {
 
                   <div className="text-14-regular py-12 flex justify-between">
                      <p className="justify-items-end text-dark-600 xl:text-left">
-                        © {new Date().getFullYear()} AVM Ayurvedic.
+                        © {new Date().getFullYear()} VitalCare Connect. Replace with your own legal entity name.
                      </p>
                      <Link href={"/admin"} className="text-green-500 text-xs">
                         Staff-Login

@@ -4,8 +4,8 @@ import { ReactNode } from "react";
 
 export const metadata: Metadata = {
    title: "Chat",
-   description: "Chat with your patients, manage your chats seamlessly with AVM Ayurvedic",
-   keywords: ["chat", "messages", "AVM Ayurvedic", "healthcare", "doctor", "patient"],
+   description: "Chat with your patients and manage your conversations seamlessly with VitalCare Connect.",
+   keywords: ["chat", "messages", "VitalCare Connect", "healthcare", "doctor", "patient"],
 };
 const layout = ({ chatList, chat }: { chatList: ReactNode; chat: ReactNode }) => {
    return <ChatLayout chat={chat} chatList={chatList} isPatient={false} />;

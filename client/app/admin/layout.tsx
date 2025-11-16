@@ -12,7 +12,7 @@ export const metadata: Metadata = {
    ...rootMeta,
    title: {
       template: "%s | Admin",
-      default: "Admin Dashboard - Manage Hospital Operations | AVM Ayurvedic",
+      default: "Admin Dashboard - Manage Operations | VitalCare Connect",
    },
 };
 

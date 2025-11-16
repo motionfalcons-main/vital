@@ -28,10 +28,16 @@ const Footer = () => {
             <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
                <div className="mb-4">
                   <Link href="/" className="flex items-center gap-2 text-lg font-semibold mb-4">
-                     <Image width={23} height={23} src={"/assets/icons/logo-icon.svg"} alt="AVM" className="h-6 w-6" />
-                     <span>AVM Ayurvedic</span>
+                     <Image
+                        width={23}
+                        height={23}
+                        src={"/assets/icons/logo-icon.svg"}
+                        alt="VitalCare Connect logo"
+                        className="h-6 w-6"
+                     />
+                     <span>VitalCare Connect</span>
                   </Link>
-                  <p className="text-sm">Holistic Ayurveda Health Care for your well-being.</p>
+                  <p className="text-sm">Modern telehealth and virtual care for patients and clinicians.</p>
                </div>
                <div>
                   <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
@@ -86,10 +92,7 @@ const Footer = () => {
                <div>
                   <h3 className="text-lg font-semibold mb-4">Connect With Us</h3>
                   <div className="flex space-x-4">
-                     <a
-                        href="https://www.linkedin.com/in/muhammed-sinan-1950b3290/"
-                        className="hover:text-white transition-colors"
-                     >
+                     <a href="https://www.linkedin.com" className="hover:text-white transition-colors">
                         <Image
                            src={"/assets/icons/social/linkedin.svg"}
                            alt="linkedin"
@@ -98,7 +101,7 @@ const Footer = () => {
                            className=""
                         />
                      </a>
-                     <a href="https://github.com/sinanptm/" className="hover:text-white transition-colors">
+                     <a href="https://github.com" className="hover:text-white transition-colors">
                         <Image
                            src={"/assets/icons/social/github.svg"}
                            alt="Github"
@@ -107,7 +110,7 @@ const Footer = () => {
                            className=""
                         />
                      </a>
-                     <a href="https://wa.me/8089507749" className="hover:text-white transition-colors">
+                     <a href="https://wa.me" className="hover:text-white transition-colors">
                         <Image
                            src={"/assets/icons/social/whatsapp.svg"}
                            alt="WhatsApp"
@@ -116,7 +119,7 @@ const Footer = () => {
                            className=""
                         />
                      </a>
-                     <a href="https://www.instagram.com/si_an_z/" className="hover:text-white transition-colors">
+                     <a href="https://www.instagram.com" className="hover:text-white transition-colors">
                         <Image
                            src={"/assets/icons/social/instagram.svg"}
                            alt="instagram"
@@ -129,7 +132,10 @@ const Footer = () => {
                </div>
             </div>
             <div className="border-t border-gray-700 mt-8 pt-6 text-center">
-               <p className="text-sm">© {new Date().getFullYear()} AVM Ayurvedic. All rights reserved.</p>
+               <p className="text-sm">
+                  © {new Date().getFullYear()} VitalCare Connect. All rights reserved. Replace this line with your own
+                  legal entity name before production.
+               </p>
             </div>
          </div>
       </footer>

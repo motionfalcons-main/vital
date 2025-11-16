@@ -11,8 +11,8 @@ interface AdminLayoutWrapperProps {
 export const metadata: Metadata = {
    ...rootMeta,
    title: {
-      template: "%s | Doctor Dashboard | AVM Ayurvedic",
-      default: "Doctor Dashboard - Manage Appointments and Consultations | AVM Ayurvedic",
+      template: "%s | Doctor Dashboard | VitalCare Connect",
+      default: "Doctor Dashboard - Manage Appointments and Consultations | VitalCare Connect",
    },
 };
 const AdminLayoutWrapper: FC<AdminLayoutWrapperProps> = ({ children, auth }) => {

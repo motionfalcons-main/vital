@@ -8,7 +8,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
    title: "Signin",
    keywords: ["admin dashboard", "admin signin", "authentication"],
-   description: "signin page for avm ayurvedic admin dashboard",
+   description: "Signin page for the VitalCare Connect admin dashboard.",
 };
 
 const SignIn = () => {
@@ -26,7 +26,7 @@ const SignIn = () => {
                <AdminSignInForm />
                <div className="text-14-regular mt-20 flex justify-between">
                   <p className="justify-items-end text-dark-600 xl:text-left">
-                     © {new Date().getFullYear()} AVM Ayurvedic.
+                     © {new Date().getFullYear()} VitalCare Connect. Replace with your own legal entity name.
                   </p>
                   <ButtonV2 variant={"linkHover2"}>
                      <Link href={"/doctor/slots"} className="text-green-500">

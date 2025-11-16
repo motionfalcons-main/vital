@@ -4,11 +4,11 @@ import { ReactNode } from "react";
 
 export const metadata: Metadata = {
    title: "Chat",
-   description: "Chat with your doctor, manage your chats seamlessly with AVM Ayurvedic",
+   description: "Chat with your doctor and manage your conversations seamlessly with VitalCare Connect.",
    keywords: [
       "chat",
       "messages",
-      "AVM Ayurvedic",
+      "VitalCare Connect",
       "healthcare",
       "doctor",
       "patient",
