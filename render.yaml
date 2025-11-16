@@ -49,12 +49,12 @@ services:
   - type: web
     name: vitalcare-connect-client
     runtime: node
-    rootDir: client
+    rootDir: .
     plan: starter
     buildCommand: |
-      pnpm install
-      pnpm build
-    startCommand: pnpm start
+      pnpm install --no-frozen-lockfile
+      cd client && pnpm build
+    startCommand: cd client && pnpm start
     envVars:
       - key: NODE_ENV
         value: production
