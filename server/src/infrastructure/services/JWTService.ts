@@ -1,14 +1,15 @@
 import ITokenService from "@/domain/interface/services/ITokenService";
-import jwt, { JwtPayload, TokenExpiredError } from "jsonwebtoken";
+import jwt, { JwtPayload, TokenExpiredError, Secret } from "jsonwebtoken";
 import { StatusCode, UserRole } from "@/types/index";
 import CustomError from "@/domain/entities/CustomError";
 import { ACCESS_TOKEN_SECRET, REFRESH_TOKEN_SECRET } from "@/config/env";
 
 export default class JWTService implements ITokenService {
-   private signToken(payload: object, secret: string, expiresIn: string): string {
-      return jwt.sign(payload, secret, { expiresIn });
+   private signToken(payload: object, secret: Secret, expiresIn: string | number): string {
+      return jwt.sign(payload, secret, { expiresIn } as any);
    }
-   private verifyToken(token: string, secret: string): JwtPayload {
+
+   private verifyToken(token: string, secret: Secret): JwtPayload {
       try {
          return jwt.verify(token, secret) as JwtPayload;
       } catch (error) {
